@@ -8,6 +8,20 @@
 
 #import "RootViewController.h"
 
+//@interface UINavigationBar (CustomBackground)
+//@end
+//
+//@implementation UINavigationBar (CustomBackground)
+//
+//-(void)drawRect:(CGRect)rect {
+//    UIImage *image = [UIImage imageNamed: @"navbar_bg.png"];
+//    [image drawInRect:rect];
+//    NSLog(@"drawRect : rect: x=%.f, y=%.2f, w=%.2f, h=%.2f", rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
+//    NSLog(@"drawRect : frame: x=%.f, y=%.2f, w=%.2f, h=%.2f", self.frame.origin.x, self.frame.origin.y, self.frame.size.width, self.frame.size.height);
+//}
+//
+//@end
+
 @implementation RootViewController
 
 #pragma mark -
@@ -22,7 +36,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];    
-    CGRect rect = CGRectMake(0.0f, 20.0f, 320.0f, 49.0f);
+    CGRect rect = CGRectMake(0.0f, 20.0f, 320.0f, 60.0f);
     self.navigationController.navigationBar.frame = rect;
     NSLog(@"drawRect: x=%.f, y=%.2f, w=%.2f, h=%.2f", rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
 }
