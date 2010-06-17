@@ -20,11 +20,12 @@
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-/*
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];    
+    CGRect rect = CGRectMake(0.0f, 20.0f, 320.0f, 49.0f);
+    self.navigationController.navigationBar.frame = rect;
+    NSLog(@"drawRect: x=%.f, y=%.2f, w=%.2f, h=%.2f", rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
 }
-*/
 
 /*
 - (void)viewDidAppear:(BOOL)animated {
